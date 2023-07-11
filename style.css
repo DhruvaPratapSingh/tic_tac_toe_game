@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+}
+li{
+    list-style: none;
+    font-size: x-large;
+}
+nav{
+    background-color: aqua;
+    color: black;
+    text-align: center;
+    height: 50px;
+    font-size: xx-large;
+    display: flex;
+   align-items: center;
+   padding: 0px 12px;
+}
+.gamecontainer{
+ /* background-color: rgb(95, 248, 100); */
+
+ display: flex;
+justify-content: center;
+margin: auto;
+}
+.container{
+    margin-top: 19px;
+display: grid;
+grid-template-columns: repeat(3,10vw);
+grid-template-rows: repeat(3,10vw);
+position: relative;
+}
+.imgbox img{
+    width: 0;
+    margin-top: 20px;
+    margin-left: 200px;
+    transition: width is ease-in-out;
+}
+.box{
+    border: 2px solid red;
+    font-size: 8vw;
+    cursor: grab;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background-color: yellow;
+}
+.gameinfo{
+    padding: 0px 34px;
+}
+.gameinfo h1{
+    font-size: 2.5rem;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.br-0{
+    border-right: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+#reset{
+    margin: 23px;
+    padding: 7px 15px;
+    background: rgb(231, 196, 196);
+    cursor: pointer;
+    border-radius: 10px;
+    color: red;
+    font-size: x-large;
+}
+#reset:hover{
+    background-color: rgb(244, 244, 164);
+}
+.line{
+    background: black;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    background-color: aqua;
+    transition: width 1s ease-in-out;
+}
+@media screen and (max-width: 800px) {
+    /* #contests{width:90%} */
+    .gamecontainer{
+        flex-wrap: wrap;
+    }
+    .gameinfo{
+        margin-top: 34px;
+    }
+    
+    .container{
+        display: grid;
+        grid-template-rows: repeat(3,20vw);
+        grid-template-columns: repeat(3,20vw);
+    }
+  }
+  
